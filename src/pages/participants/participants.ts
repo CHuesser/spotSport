@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, NavParams} from 'ionic-angular';
 import { RunnerDetailPage } from '../runner-detail/runner-detail';
 import {Athlete} from "../../models/Athlete";
 import {AthleteServiceProvider} from "../../providers/athlete-service/athlete-service";
@@ -13,12 +13,18 @@ export class ParticipantsPage {
 
   athletes : Athlete[] = [];
 
-  constructor(public navCtrl: NavController, private athleteServiceProvider:AthleteServiceProvider, private userServiceProvider:UserServiceProvider) {
-    this.athleteServiceProvider.getAthletes().subscribe((athletes) => {
-      var ath = JSON.parse(athletes._body)._embedded.athletes;
+  constructor(public navCtrl: NavController, private athleteServiceProvider:AthleteServiceProvider, private userServiceProvider:UserServiceProvider, private navParams:NavParams) {
+    if(this.navParams.data == null) {
+      this.athleteServiceProvider.getAthletes().subscribe((athletes) => {
+        var ath = JSON.parse(athletes._body)._embedded.athletes;
+        ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
+        this.athletes = ath;
+      });
+    }else{
+      var ath = this.navParams.data.athletes;
       ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
       this.athletes = ath;
-    });
+    }
   }
   goToRunnerDetail(params){
     if (!params) params = {};
