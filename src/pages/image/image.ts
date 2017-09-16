@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ImagePage } from '../image/image';
-import { RunnerPage } from '../runner/runner';
-import { EventsPage } from '../events/events';
 import { CameraPage } from '../camera/camera';
+import { RunnerPage } from '../runner/runner';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-image',
+  templateUrl: 'image.html'
 })
-export class HomePage {
+export class ImagePage {
 
   constructor(public navCtrl: NavController) {
   }
@@ -22,8 +20,5 @@ export class HomePage {
   }goToRunner(params){
     if (!params) params = {};
     this.navCtrl.push(RunnerPage);
-  }goToEvents(params){
-    if (!params) params = {};
-    this.navCtrl.push(EventsPage);
   }
 }
