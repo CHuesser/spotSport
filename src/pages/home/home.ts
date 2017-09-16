@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { EventsPage } from '../events/events';
 
 @Component({
   selector: 'page-home',
@@ -8,6 +9,9 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
+  }goToEvents(params){
+    if (!params) params = {};
+    this.navCtrl.push(EventsPage);
   }
 
 }
