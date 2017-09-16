@@ -3,7 +3,7 @@
   <ion-navbar>
     <ion-title>Participants</ion-title>
   </ion-navbar>
-  <ion-searchbar class="front" placeholder="Search with name or start number" name="search" id="participants-search"></ion-searchbar>
+  <ion-searchbar class="front" placeholder="Search with name or start number" name="search" id="participants-search" (ionInput)="getItems($event)"></ion-searchbar>
 </ion-header>
 <ion-content>
   <ion-list>
