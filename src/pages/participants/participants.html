@@ -10,6 +10,7 @@
       <ion-item class="itemclass" *ngFor="let athlete of athletes" (click)="goToRunnerDetail(athlete)">
       <ion-avatar item-start  >
         <img class="avatar"[src]="athlete.user.photo">
+        <div class="circle"><div class="rank"> #{{athlete.id }}</div> </div>
       </ion-avatar>
       <h2>{{athlete.startNr}}</h2>
       <h3>{{athlete.name}}</h3>
