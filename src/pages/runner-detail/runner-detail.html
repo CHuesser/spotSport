@@ -4,13 +4,13 @@
       <h3 id="profile-name">Lukas Schönbächler</h3>
     </ion-navbar>
   </ion-header>
-  <ion-content padding>
+  <ion-content >
   <div id="content">
     <div id="profile-info">
       <img id="profile-image" src="../assets/img/run.jpg">
 
     </div>
-    <hr/>
+
     <ion-row class="profile-numbers">
       <ion-col col-4>
         <p>Runs</p>
@@ -25,9 +25,8 @@
         <span>26</span>
       </ion-col>
     </ion-row>
-    <div id="posts">
-
-
+    <hr/>
+    <div id="posts" padding>
       <ion-card *ngFor="let image of images">
 
         <ion-item>
@@ -37,7 +36,7 @@
           <h2>{{image.user.name}}</h2>
         </ion-item>
 
-        <img src="../assets/img/run.jpg">
+        <img src="../assets/img/marathon.jpg">
         <ion-row>
           <ion-col>
             <button ion-button icon-left clear small>
