@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Athlete} from "../../models/Athlete";
 
 /**
  * Generated class for the RunnerPage page.
@@ -15,7 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RunnerPage {
 
+  private athletes : Athlete[];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.athletes = navParams.data.athletes;
+    console.log(this.athletes);
   }
 
   ionViewDidLoad() {

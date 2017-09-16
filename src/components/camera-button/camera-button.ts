@@ -3,6 +3,8 @@ import {Camera, CameraOptions} from '@ionic-native/camera';
 import {RecognizeServiceProvider} from "../../providers/recognize-service/recognize-service";
 import {Platform, NavController} from "ionic-angular";
 import {RunnerPage} from "../../pages/runner/runner";
+import {Athlete} from "../../models/Athlete";
+import {Response} from "@angular/http";
 
 /**
  * Generated class for the CameraButtonComponent component.
@@ -43,7 +45,7 @@ export class CameraButtonComponent {
 
   postImage(base64Image) {
     this.recognizeServiceProvider.postRecognize(base64Image).subscribe((result) => {
-      this.navCtrl.push(RunnerPage, result);
+      this.navCtrl.push(RunnerPage, {athletes: JSON.parse(result._body)});
     }, (e) => {
       alert('error ' + JSON.stringify(e));
     });
