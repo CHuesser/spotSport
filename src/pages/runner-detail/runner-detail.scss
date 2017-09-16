@@ -75,5 +75,33 @@ page-runner-detail {
     background: #444;
     background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, rgb(188, 198, 214) 50%, hsla(0, 0%, 0%, 0) 100%);
   }
+  .button-clear-md {
+      color: #840160;
+  }
+  .buyparent{
+    float: left;
+    position: absolute;
+    right: 16px;
+    top:10px;
+  }
+  .buy{
+    background-color: #EE3351;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .buy:hover:not(.disable-hover) {
+    background-color: #EE3351;
+}
 
+  .item-inner{
+    align-self:auto;
+  }
+  ion-label {
+    flex: none;
+    width:100%;
+  }
+  .label h2{
+
+    float: left;
+  }
 }
