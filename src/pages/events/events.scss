@@ -78,7 +78,6 @@ page-events {
     .card-title {
       text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
       position: relative;
-      z-index: 2;
       margin-top: 0;
       margin-bottom: 2vw;
       padding: 0 2vw;
@@ -108,4 +107,15 @@ page-events {
 
 
 
+  }
+
+  .fab-md {
+    box-shadow: none;
+    background-color: #840160;
+  }
+
+
+
+  .toolbar::after {
+    background-color:lime;
   }
