@@ -2,9 +2,13 @@ page-participants {
   .itemclass{
     height: 100px;
   }
+
   .background{
     z-index: 1;
-
+  }
+  .name{
+    font-weight: 500;
+    font-size: 19px;
   }
 
   .avatar{
@@ -25,7 +29,7 @@ page-participants {
     width: 1.5em;
     position: relative;
     z-index: 4;
-    margin-top: -4.3em;
-    margin-left: -0.5em;
+    margin-top: -4.1em;
+    margin-left: -0.4em;
   }
 }

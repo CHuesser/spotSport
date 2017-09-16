@@ -8,10 +8,10 @@
 <ion-content>
   <ion-list>
     <ion-searchbar placeholder="Search with name or start number" name="search" id="participants-search"></ion-searchbar>
-
     <ion-item *ngFor="let athlete of athletes" (click)="goToRunnerDetail(athlete)">
-      <ion-avatar item-start>
+      <ion-avatar item-start  >
         <img [src]="athlete.user.photo">
+        <div class="circle"> #1 </div>
       </ion-avatar>
       <h2>{{athlete.startNr}}</h2>
       <h3>{{athlete.name}}</h3>
