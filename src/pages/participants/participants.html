@@ -8,31 +8,44 @@
 <ion-content>
   <ion-list id="participants-list">
     <ion-searchbar placeholder="Search with name or start number" name="search" id="participants-search"></ion-searchbar>
-    <ion-item color="none" id="participants-list-item1" (click)="goToRunnerDetail()">
-      <ion-thumbnail item-left>
-        <img />
-      </ion-thumbnail>
+    <ion-item class="itemclass" color="none" id="participants-list-item1" (click)="goToRunnerDetail()">
+      <ion-avatar item-start  >
+        <img class="avatar" src="../assets/img/run.jpg"/>
+        <div class="circle"> #1 </div>
+      </ion-avatar>
+      <h1>
+       Janine Bla
+      </h1>
       <h2>
-        12, Janine Bla
+        12
       </h2>
     </ion-item>
-    <ion-item color="none" id="participants-list-item2">
-      <ion-thumbnail item-left>
-        <img />
-      </ion-thumbnail>
+    <ion-item class="itemclass" color="none" id="participants-list-item2">
+      <ion-avatar item-start >
+        <img class="avatar" src="../assets/img/run.jpg"/>
+        <div class="circle"> #2 </div>
+      </ion-avatar>
+      <h1>
+        Marisa Muster
+      </h1>
       <h2>
-        56, Marisa Muster
+        56
       </h2>
     </ion-item>
-    <ion-item color="none" id="participants-list-item3">
-      <ion-thumbnail item-left>
-        <img />
-      </ion-thumbnail>
+    <ion-item class="itemclass" color="none" id="participants-list-item3">
+      <ion-avatar item-start>
+        <img class="avatar" src="../assets/img/run.jpg"/>
+        <div class="circle"> #3 </div>
+      </ion-avatar>
+      <h1>
+        Alison Runner
+      </h1>
       <h2>
-        25, Alison Runner
+        25
       </h2>
     </ion-item>
   </ion-list>
+
   <camera-button></camera-button>
 </ion-content>
 
