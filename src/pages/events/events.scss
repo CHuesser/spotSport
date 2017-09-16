@@ -4,8 +4,30 @@ page-events {
     ion-card {
       position: relative;
       text-align: center;
+      color: white;
     }
 
+    .position-date{
+      padding-top: 2em;
+
+    }
+
+    .date-day{
+      font-family: "Trade Gothic Condensed", Arial, sans-serif;
+      font-size: 9.75vw;
+      font-weight: 700;
+      line-height: .8;
+      text-align: center;
+
+      letter-spacing: -.05em;
+    }
+    .date-month{
+      cursor: default;
+      text-align: center;
+      font-family: "Trade Gothic Condensed", Arial, sans-serif;
+      font-size: 3vw;
+      text-transform: uppercase;
+    }
     .card-title {
       text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
       position: absolute;
@@ -25,5 +47,14 @@ page-events {
       letter-spacing: -0.05em;
       text-transform: uppercase;
     }
+    .card-subtitle{
+
+
+      text-align: center;
+      font-family: "Trade Gothic Condensed", Arial, sans-serif;
+      font-size: 3vw;
+      text-transform: uppercase;
+    }
+
   }
   }
