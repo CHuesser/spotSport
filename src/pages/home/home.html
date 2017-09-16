@@ -1,15 +1,8 @@
 <ion-content class="card-background-page">
 
-  <ion-card (click)="goToEvents()">
-    <img src="assets/img/run.jpg"/>
-    <div class="card-title">10km run</div>
-
-  </ion-card>
-
-  <ion-card (click)="goToEvents()">
-    <img src="assets/img/marathon.jpg"/>
-    <div class="card-title">Marathon</div>
-
+  <ion-card *ngFor="let runType of runTypes" (click)="goToEvents()">
+    <img src="{{runType.image}}"/>
+    <div class="card-title">{{runType.title}}</div>
   </ion-card>
 
   <camera-button></camera-button>
