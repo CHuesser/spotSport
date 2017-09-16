@@ -8,11 +8,13 @@ import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { RunnerPage } from '../pages/runner/runner';
 import { ParticipantsPage } from '../pages/participants/participants';
-
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {CameraButtonComponent} from "../components/camera-button/camera-button";
+import { Camera } from '@ionic-native/camera';
+import { RecognizeServiceProvider } from '../providers/recognize-service/recognize-service';
+import { HttpModule} from "@angular/http";
+import { RunTypesServiceProvider } from '../providers/run-types-service/run-types-service';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import {CameraButtonComponent} from "../components/camera-button/camera-button";
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -41,8 +44,11 @@ import {CameraButtonComponent} from "../components/camera-button/camera-button";
   ],
   providers: [
     StatusBar,
+    Camera,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RecognizeServiceProvider,
+    RunTypesServiceProvider
   ]
 })
 export class AppModule {}

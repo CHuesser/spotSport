@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { CameraPage } from '../camera/camera';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the RunnerPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-runner',
-  templateUrl: 'runner.html'
+  templateUrl: 'runner.html',
 })
 export class RunnerPage {
 
-  constructor(public navCtrl: NavController) {
-  }  goToCamera(params) {
-    if (!params) params = {};
-    this.navCtrl.push(CameraPage);
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad RunnerPage');
+  }
+
 }
