@@ -17,6 +17,7 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { AthleteServiceProvider } from '../providers/athlete-service/athlete-service';
 import { EnvoirmentServiceProvider } from '../providers/envoirment-service/envoirment-service';
+import { ImageServiceProvider } from '../providers/image-service/image-service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { EnvoirmentServiceProvider } from '../providers/envoirment-service/envoi
     RunServiceProvider,
     UserServiceProvider,
     AthleteServiceProvider,
-    EnvoirmentServiceProvider
+    EnvoirmentServiceProvider,
+    ImageServiceProvider
   ]
 })
 export class AppModule {}
