@@ -8,13 +8,13 @@
                       "ID": "1",
             					"title": "Swiss Management Run",
                       "date": "15 September",
-                      "location": "Arosa",
+                      "location": "Arosa"
                   },
                   "RunType": {
                       "ID": "2",
             					"title": "Greifenseelauf",
                       "date": "16 September",
-                      "location": "Uster",
+                      "location": "Uster"
                   }
               }
             }
