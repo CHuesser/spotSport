@@ -28,7 +28,7 @@ page-runner-detail {
     width: 100px;
     height: 100px;
     margin: 0 auto 0;
-    box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
+    //box-shadow: 0px 11px 20px -3px rgba(142, 136, 146, 0.75);
   }
   #profile-info {
     position: absolute;
@@ -82,7 +82,7 @@ page-runner-detail {
     float: left;
     position: absolute;
     right: 16px;
-    top:10px;
+    top:0px;
   }
   .buy{
     background-color: #EE3351;
