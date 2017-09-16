@@ -1,6 +1,6 @@
 <ion-content class="card-background-page">
 
-  <ion-card *ngFor="let runType of runTypes" (click)="goToEvents()">
+  <ion-card *ngFor="let runType of runTypes" (click)="goToEvents(runType)">
     <div class="card-title">{{runType.title}}</div>
     <div class="tint">
       <img src="{{runType.image}}"/>

@@ -18,7 +18,7 @@ export class HomePage {
 
   goToEvents(params){
     if (!params) params = {};
-    this.navCtrl.push(EventsPage);
+    this.navCtrl.push(EventsPage,params);
   }
 
 }
