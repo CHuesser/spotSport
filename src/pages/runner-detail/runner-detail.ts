@@ -18,6 +18,7 @@ export class RunnerDetailPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  runner: string = "person";
   ionViewDidLoad() {
     console.log('ionViewDidLoad RunnerDetailPage');
   }

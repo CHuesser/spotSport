@@ -14,5 +14,29 @@
 
 
 <ion-content padding>
-
+  <div padding>
+    <ion-segment [(ngModel)]="runner">
+      <ion-segment-button value="person">
+        Person
+      </ion-segment-button>
+      <ion-segment-button value="tracks">
+        Tracks
+      </ion-segment-button>
+      <ion-segment-button value="pictures">
+        Pictures
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="runner">
+    <div *ngSwitchCase="'person'">
+      person info
+    </div>
+    <div *ngSwitchCase="'tracks'">
+      tracks info
+    </div>
+    <div *ngSwitchCase="'pictures'">
+      other pictures
+    </div>
+  </div>
+  <camera-button></camera-button>
 </ion-content>
