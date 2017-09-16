@@ -16,6 +16,7 @@ import { RecognizeServiceProvider } from '../providers/recognize-service/recogni
 import { HttpModule} from "@angular/http";
 import { RunTypesServiceProvider } from '../providers/run-types-service/run-types-service';
 import { RunServiceProvider } from '../providers/run-service/run-service';
+import { UserServiceProvider } from '../providers/user-service/user-service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecognizeServiceProvider,
     RunTypesServiceProvider,
-    RunServiceProvider
+    RunServiceProvider,
+    UserServiceProvider
   ]
 })
 export class AppModule {}

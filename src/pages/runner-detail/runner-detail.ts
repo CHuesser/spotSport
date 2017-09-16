@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {RandomUser} from "../../models/RandomUser";
+import {UserServiceProvider} from "../../providers/user-service/user-service";
+import {Image} from "../../models/Image";
 
 /**
  * Generated class for the RunnerDetailPage page.
@@ -15,7 +18,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RunnerDetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  images: Image[] = []
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public userServiceProvider:UserServiceProvider) {
+
+    this.images.push(new Image());
+    this.images.push(new Image());
+    this.images.push(new Image());
+    
+    this.images.map(i => i.user = userServiceProvider.getRandomUser())
+
   }
 
   runner: string = "person";
