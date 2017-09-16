@@ -6,8 +6,8 @@
   <ion-content padding>
   <div id="content">
     <div id="profile-info">
-      <img id="profile-image" src="../assets/img/run.jpg">
-      <h3 id="profile-name">Lukas Schönbächler</h3>
+      <img id="profile-image" [src]="athlete.user.photo">
+      <h3 id="profile-name">{{athlete.name}}</h3>
     </div>
     <hr/>
     <ion-row class="profile-numbers">
@@ -31,7 +31,7 @@
 
         <ion-item>
           <ion-avatar item-start>
-            <img src="{{image.user.photo}}">
+            <img [src]="image.user.photo">
           </ion-avatar>
           <h2>{{image.user.name}}</h2>
         </ion-item>

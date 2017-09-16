@@ -1,3 +1,4 @@
+import {RandomUser} from "./RandomUser";
 export class Athlete {
   id: number;
   startNr: number;
@@ -7,4 +8,6 @@ export class Athlete {
   country: string;
   year: string;
   category: string;
+
+  user:RandomUser;
 }

@@ -20,7 +20,6 @@ export class RunnerPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.athletes = navParams.data.athletes;
-    console.log(this.athletes);
   }
 
   ionViewDidLoad() {

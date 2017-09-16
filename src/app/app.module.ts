@@ -17,6 +17,8 @@ import { HttpModule} from "@angular/http";
 import { RunTypesServiceProvider } from '../providers/run-types-service/run-types-service';
 import { RunServiceProvider } from '../providers/run-service/run-service';
 import { UserServiceProvider } from '../providers/user-service/user-service';
+import { AthleteServiceProvider } from '../providers/athlete-service/athlete-service';
+import { EnvoirmentServiceProvider } from '../providers/envoirment-service/envoirment-service';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { UserServiceProvider } from '../providers/user-service/user-service';
     RecognizeServiceProvider,
     RunTypesServiceProvider,
     RunServiceProvider,
-    UserServiceProvider
+    UserServiceProvider,
+    AthleteServiceProvider,
+    EnvoirmentServiceProvider
   ]
 })
 export class AppModule {}
