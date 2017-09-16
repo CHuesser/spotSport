@@ -12,14 +12,6 @@ export class EventsPage {
 
   constructor(public navCtrl: NavController) {
   }
-  goToCamera(params){
-    if (!params) params = {};
-    this.navCtrl.push(CameraPage);
-  }goToImage(params){
-    if (!params) params = {};
-    this.navCtrl.push(ImagePage);
-  }goToRunner(params){
-    if (!params) params = {};
-    this.navCtrl.push(RunnerPage);
-  }
+
+
 }

@@ -1,3 +1,29 @@
 page-events {
+  .card-background-page {
 
-}
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .card-title {
+      text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      margin-top: 0;
+      font-size: 5rem;
+      cursor: pointer;
+      transform: skewY(-4deg) translateY(-50%) translateX(-50%);
+      display: block;
+      color: white;
+      font-family: "Trade Gothic Condensed", Arial, sans-serif;
+      max-width: 31.25rem;
+      font-weight: 700;
+      line-height: .9;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+  }
+  }
