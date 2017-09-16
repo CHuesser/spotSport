@@ -4,7 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { EventsPage } from '../pages/events/events';
-import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { RunnerPage } from '../pages/runner/runner';
 import { ParticipantsPage } from '../pages/participants/participants';
@@ -22,7 +21,6 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
     MyApp,
     HomePage,
     EventsPage,
-    CameraPage,
     ImagePage,
     RunnerPage,
     ParticipantsPage,
@@ -38,7 +36,6 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
     MyApp,
     HomePage,
     EventsPage,
-    CameraPage,
     ImagePage,
     RunnerPage,
     ParticipantsPage

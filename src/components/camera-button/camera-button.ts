@@ -18,6 +18,7 @@ export class CameraButtonComponent {
 
   options: CameraOptions = {
     quality: 80,
+    allowEdit: false,
     destinationType: this.camera.DestinationType.DATA_URL,
     encodingType: this.camera.EncodingType.JPEG,
     mediaType: this.camera.MediaType.PICTURE
