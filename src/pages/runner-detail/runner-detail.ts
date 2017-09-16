@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RandomUser} from "../../models/RandomUser";
 import {UserServiceProvider} from "../../providers/user-service/user-service";
 import {Image} from "../../models/Image";
+import {Athlete} from "../../models/Athlete";
 
 /**
  * Generated class for the RunnerDetailPage page.
@@ -19,13 +20,22 @@ import {Image} from "../../models/Image";
 export class RunnerDetailPage {
 
   images: Image[] = []
+  athlete: Athlete;
 
+  runs = Math.floor(Math.random() * 50) + 4;
+  km = Math.floor(Math.random() * 250) + 5;
+  rank = Math.floor(Math.random() * 100) + 1;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, public userServiceProvider:UserServiceProvider) {
 
+
+
+
+    this.athlete = this.navParams.data;
     this.images.push(new Image());
     this.images.push(new Image());
     this.images.push(new Image());
-    
+
     this.images.map(i => i.user = userServiceProvider.getRandomUser())
 
   }
