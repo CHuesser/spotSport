@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {Run} from "../../models/Run";
-import {RunServiceProvider} from "../../providers/run-service/run-service";
+import { Run } from "../../models/Run";
+import { RunServiceProvider } from "../../providers/run-service/run-service";
 import { ParticipantsPage } from '../participants/participants';
 
 
