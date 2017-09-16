@@ -29,7 +29,22 @@
   </div>
   <div [ngSwitch]="runner">
     <div *ngSwitchCase="'person'">
-      person info
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+            <img src="../assets/img/run.jpg"/>
+          </ion-col>
+          <ion-col>
+
+              <div class="name">Max Muster</div>
+              <div class="birth">1985</div>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
     </div>
     <div *ngSwitchCase="'tracks'">
       tracks info
