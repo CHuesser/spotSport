@@ -15,6 +15,7 @@ import { Camera } from '@ionic-native/camera';
 import { RecognizeServiceProvider } from '../providers/recognize-service/recognize-service';
 import { HttpModule} from "@angular/http";
 import { RunTypesServiceProvider } from '../providers/run-types-service/run-types-service';
+import { RunServiceProvider } from '../providers/run-service/run-service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { RunTypesServiceProvider } from '../providers/run-types-service/run-type
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecognizeServiceProvider,
-    RunTypesServiceProvider
+    RunTypesServiceProvider,
+    RunServiceProvider
   ]
 })
 export class AppModule {}

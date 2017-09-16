@@ -1,21 +1,11 @@
 <ion-content class="card-background-page">
 
-  <ion-card>
+  <ion-card *ngFor="let run of runs">
     <img src="assets/img/run.jpg"/>
     <div class="date-day">16</div>
-    <div class="date-month">September</div>
-    <div class="card-title">Stadtlauf Bern</div>
-    <div class="card-subtitle">Bern</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/img/marathon.jpg"/>
-    <div class="position-date">
-      <div class="date-day">16</div>
-      <div class="date-month">September</div>
-    </div>
-    <div class="card-title">Stätde Run</div>
-    <div class="card-subtitle">Solothurn</div>
+    <div class="date-month">{{run.date}}</div>
+    <div class="card-title">{{run.title}}</div>
+    <div class="card-subtitle">{{run.location}}</div>
   </ion-card>
 
   <camera-button></camera-button>

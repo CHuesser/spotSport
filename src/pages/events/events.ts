@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {Run} from "../../models/Run";
+import {RunServiceProvider} from "../../providers/run-service/run-service";
 
 
 @Component({
@@ -8,7 +10,10 @@ import { NavController } from 'ionic-angular';
 })
 export class EventsPage {
 
-  constructor(public navCtrl: NavController) {
+  private runs : Run[];
+
+  constructor(public navCtrl: NavController, private runServiceProvider:RunServiceProvider) {
+    this.runServiceProvider.getRuntypes().then((runs) => this.runs = runs);
   }
 
 
