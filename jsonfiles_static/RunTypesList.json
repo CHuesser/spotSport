@@ -1,0 +1,128 @@
+{
+  "RunTypesList": {
+    "RunTypeEntrys": {
+      "RunType": [
+        {
+          "ID": "1",
+          "title": "10 Kilometres",
+          "description": "The 10 kilometre distance is popular with runners of all proficiency levels. You can make it your main goal, an intermediate goal, or else perhaps use it to take stock as you train for a half marathon or marathon, for example.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/10km_630x420.jpg"
+        },
+        {
+          "ID": "2",
+          "title": "Half Marathon",
+          "description": "Half marathon - the full measure: Increasingly more runners are recognizing that the half marathon is anything but a half measure. The 21.1 kilometres are challenging and demanding and perfectly combine running exertion and pleasure.<br><br>The half marathon can, but need not, be perfect preparation for a full marathon. For many it is the “final station”, the perfect destination that can be reached without any excessive effort. This distance requires regular training of the cardiovascular system and challenges the musculoskeletal system without overloading it. The 21.1 kilometres can also be accomplished if you only go running three times a week.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/halbmarathon_630x420.jpg"
+        },
+        {
+          "ID": "3",
+          "title": "Marathon",
+          "description": "More and more participants in popular sports are taking on the magical 42.195 km. Whether in the city, across the countryside or in the mountains, every competition writes its own stories.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/marathon_630x420.jpg"
+        },
+        {
+          "ID": "4",
+          "title": "Mountain Runs",
+          "description": "Once discovered, never forgotten. Mountain runs have a very special appeal because the emphasis is not only on performance, but also on the experience and the path to the finish in particular. In the vast majority of cases, participants are rewarded with beautiful landscapes and stunning panoramas.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/berglauf_630x420.jpg"
+        },
+        {
+          "ID": "5",
+          "title": "City Runs",
+          "description": "Once discovered, never forgotten. Runners find city runs particularly appealing because not only is the atmosphere usually fantastic, but they also get to run along routes that they only otherwise know from strolling through the city, and they are accompanied by a great deal of other like-minded souls at the same time.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/stadtlauf_630x420.jpg"
+        },
+        {
+          "ID": "6",
+          "title": "Ultra Running",
+          "description": "Ultra trail running is beguiling more and more runners. There are virtually no limits, the longest and most spectacular trail is the goal. The finishing line of the marathon is the gateway to the Ultra: everything measuring more than 42.195 kilometres counts as ultra trail running.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/ultrarun_630x420.jpg"
+        },
+        {
+          "ID": "7",
+          "title": "Trail Running",
+          "description": "Trail running has enjoyed great popularity for years. Running on small trails in the most beautiful regions definitely has its charm. Increasingly more events are being held in this field, offering athletes not only ultimate challenges but also unforgettable experiences on fantastic trail routes.<br><br>The Trail Running category comprises events that have at least two-thirds natural or mountain trails, 1-day events (starting and finishing on the same day), a race distance of at least 30 km, and a difference in altitude of at least 1500 metres up and 400 metres down.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/trailrun_630x420.jpg"
+        },
+        {
+          "ID": "8",
+          "title": "Kids Races",
+          "description": "Early practice makes perfect. In many running events, children are now being offered the chance to participate in order to emulate their great role models. The challenges are always adapted to the respective age group and the emphasis in on the experience of participation.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/kidsrun_630x420.jpg"
+        },
+        {
+          "ID": "9",
+          "title": "Relay + Team",
+          "description": "Achieving a goal together unites and makes you strong. More and more events are offering team and relay ratings, which not only awaken the individual athlete's team spirit but are also without doubt great fun. These popular types of competitions are suitable for clubs, as well as companies, friends, or couples. The experience can affect you for months, even years. See for yourself!",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/teamrun_630x420.jpg"
+        },
+        {
+          "ID": "10",
+          "title": "Others",
+          "description": "",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/multiother_630x420.jpg"
+        },
+        {
+          "ID": "11",
+          "title": "Ski Events",
+          "description": "Skiing is still the most popular winter sports. Alone, in pairs, or with the whole family – skiing and everything else associated with it is very much in vogue. Recreational races are equally popular with passionate skiers. Datasport has been supporting the most traditional races with its services for many years now and places its know-how at your disposal.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/ski_630x420.jpg"
+        },
+        {
+          "ID": "12",
+          "title": "Cross Country Skiing",
+          "description": "In winter, cross-country skiing competitions are the salt in the soup for many endurance athletes. As soon as the starting shot rings out, they zip off and quickly align themselves like pearls on a string and fight to the end. This is preferably done with fast skis under the feet.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/langlauf_630x420.jpg"
+        },
+        {
+          "ID": "13",
+          "title": "Kids Races",
+          "description": "",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/kidsski_630x420.jpg"
+        },
+        {
+          "ID": "14",
+          "title": "Walking",
+          "description": "Walking/Nordic walking, orginally a method of summer training for cross-country skiiers has established itself as a popular sport for young and old. Many events have come out from the walking/Nordic walking movement and Datasport supports them with an extensive package of services.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/walking_630x420.jpg"
+        },
+        {
+          "ID": "15",
+          "title": "ZKB Zürilaufcup",
+          "description": "Everyone is taking part - participation is more important than the ranking! You can collect valuable rating points at the various races being held between January and September. Those who complete six or more races will take part in the end-of-year rating. Prizes can be won at every race. What’s more, all diligent participants with six races or more under their belt will receive a non-cash prize. The five first-place winners in each age group will be invited to take part in a training weekend with top athletes.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/zkb_630x420.jpg"
+        },
+        {
+          "ID": "16",
+          "title": "SportXX Laufserie",
+          "description": "The motto of the second edition of the national SportXX running series is run, run, run. And benefit: Each run is worthwhile because runners participating in any of the ten races supported by SportXX (the Bern Grand Prix is a new addition) will be rewarded with one SportXX voucher and a running point.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/sportxx_630x420.jpg"
+        },
+        {
+          "ID": "17",
+          "title": "Goin6Weeks",
+          "description": "At long last, spring is coming. Now that the weather is inviting you to exercise outdoors-it's time for GO-IN6WEEKS. The Lucerne multi-stage fun run starts in Sursee on Wednesday, 19 April 2017. Roughly 400 athletes are expected on each of the six consecutive Wednesday evenings.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/goin6weeks_630x420.jpg"
+        },
+        {
+          "ID": "18",
+          "title": "Tour de chablais",
+          "description": "This extremely popular and traditional racing series offers something for everyone. Beginners and ambitious runners alike will get their share of fun at the foot of the Rhone Valley. You can participate in just one or several stages over six consecutive Wednesdays. Those who take part in all of the stages will be included in the overall ranking.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/tdc_630x420.jpg"
+        },
+        {
+          "ID": "19",
+          "title": "Tour du pays de Vaud Printanier",
+          "description": "The Wednesday evening race series in the Canton of Vaud offers runners of all performance levels 4 stages on varied running routes in beautiful surroundings. Participants will run in the La Broye district, in the Vaudois part of the Jura Mountains, and along the shores of Lake Geneva.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/tpvp_630x420.jpg"
+        },
+        {
+          "ID": "20",
+          "title": "Tour du pays de Vaud",
+          "description": "The Tour de pays de Vaud automnal is the traditional Wednesday evening race series in the Canton of Vaud. It takes place after the summer holidays and covers 5 stages. The second stage is special as the racers start individually.",
+          "image": "https://www.datasport.com/en/includes/themes/dsNotch/assets/images/categories/tpv_630x420.jpg"
+        }
+      ]
+    }
+  }
+}
