@@ -5,7 +5,6 @@ page-events {
       position: relative;
       text-align: center;
       color: white;
-      height: 200px;
     }
 
     .card-events {
@@ -14,42 +13,41 @@ page-events {
       flex-direction: column;
     }
 
-.card-event-header{
-  flex: 0 0 auto;
-  align-self: auto;
-}
+    .card-event-header{
+        flex: 0 0 auto;
+        order: 0;
+        align-self: auto;
+    }
 
     .card-event-footer {
-      height:50%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      overflow: hidden;
+      width: calc(100% + 2px);
+      height: 50%;
+      opacity: 1;
+      transition: opacity 120ms linear
     }
 
     .card-event-center {
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex: 1 auto;
       flex: 1 auto;
-      -ms-flex-direction: column;
       flex-direction: column;
-      -ms-flex-align: center;
       align-items: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -ms-flex-order: 0;
       order: 0;
       padding-bottom: 20%;
-      -ms-flex-item-align: auto;
       align-self: auto;
     }
 
     .position-date{
-      display: -ms-inline-flexbox;
       display: inline-flex;
       position: relative;
-      left: 50%;
-      -ms-flex-direction: row;
-      flex-direction: row;
+      text-align: center;
+      flex-direction: column;
       margin-top: 5.75vw;
-      transform: translateX(-50%);
     }
 
     .date-day{
@@ -70,26 +68,23 @@ page-events {
     }
     .card-title {
       text-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
-      position: absolute;
-      top: 50%;
-      left: 50%;
+      position: relative;
       z-index: 2;
       margin-top: 0;
-      font-size: 2.5rem;
+      margin-bottom: .125vw;
+      padding: 0 .5vw;
+      font-size: 2rem;
       cursor: pointer;
-      transform: skewY(-4deg) translateY(-50%) translateX(-50%);
+      transform: skewY(-4deg);
       display: block;
       color: white;
       font-family: "Trade Gothic Condensed", Arial, sans-serif;
-      max-width: 31.25rem;
       font-weight: 700;
       line-height: .9;
       letter-spacing: -0.05em;
       text-transform: uppercase;
     }
     .card-subtitle{
-
-
       text-align: center;
       font-family: "Trade Gothic Condensed", Arial, sans-serif;
       font-size: 3vw;
@@ -97,4 +92,10 @@ page-events {
     }
 
   }
+  }
+
+  .card-md {
+    margin: 0;
+    width:100%;
+    box-shadow: none;
   }
