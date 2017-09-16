@@ -3,14 +3,14 @@
   <ion-navbar>
     <ion-title>Participants</ion-title>
   </ion-navbar>
-  <ion-searchbar class="front" placeholder="Search with name or start number" name="search" id="participants-search"></ion-searchbar>
+  <ion-searchbar class="front" placeholder="Search with name or start number" name="search" id="participants-search" (ionInput)="getItems($event)"></ion-searchbar>
 </ion-header>
 <ion-content>
   <ion-list>
-      <ion-item class="itemclass" *ngFor="let athlete of athletes" (click)="goToRunnerDetail(athlete)">
+      <ion-item class="itemclass" *ngFor="let athlete of athletes;  let i = index"  (click)="goToRunnerDetail(athlete)">
       <ion-avatar item-start  >
         <img class="avatar"[src]="athlete.user.photo">
-        <div class="circle"><div class="rank"> #{{athlete.id }}</div> </div>
+        <div class="circle"><div class="rank"> #{{i+1}}</div> </div>
       </ion-avatar>
       <h2>{{athlete.startNr}}</h2>
       <h3>{{athlete.name}}</h3>
