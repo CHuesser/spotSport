@@ -16,8 +16,6 @@ export class HomePage {
     this.runTypesServiceProvider.getRuntypes().then((runTypes => this.runTypes = runTypes));
   }
 
-
-
   goToEvents(params){
     if (!params) params = {};
     this.navCtrl.push(EventsPage);
