@@ -7,9 +7,48 @@ page-events {
       color: white;
     }
 
-    .position-date{
-      padding-top: 2em;
+    .card-events {
+      background-color: #f15b73;
+      display: flex;
+      flex-direction: column;
+    }
 
+.card-event-header{
+  flex: 0 0 auto;
+  align-self: auto;
+}
+
+    .card-event-footer {
+      height:50%;
+    }
+
+    .card-event-center {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 1 auto;
+      flex: 1 auto;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-order: 0;
+      order: 0;
+      padding-bottom: 20%;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+    }
+
+    .position-date{
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      position: relative;
+      left: 50%;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-top: 5.75vw;
+      transform: translateX(-50%);    
     }
 
     .date-day{
@@ -35,7 +74,7 @@ page-events {
       left: 50%;
       z-index: 2;
       margin-top: 0;
-      font-size: 5rem;
+      font-size: 2.5rem;
       cursor: pointer;
       transform: skewY(-4deg) translateY(-50%) translateX(-50%);
       display: block;

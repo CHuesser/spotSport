@@ -1,11 +1,20 @@
 <ion-content class="card-background-page">
 
-  <ion-card *ngFor="let run of runs">
-    <img src="assets/img/run.jpg"/>
-    <div class="date-day">16</div>
-    <div class="date-month">{{run.date}}</div>
-    <div class="card-title">{{run.title}}</div>
-    <div class="card-subtitle">{{run.location}}</div>
+  <ion-card *ngFor="let run of runs" (click)="goToParticipants()">
+    <div class="card-events">
+      <div class="card-event-header">
+        <div class="position-date">
+          <div class="date-day">16</div>
+          <div class="date-month">{{run.date}}</div>
+        </div>
+      </div>
+      <div class="card-event-center">
+        <div class="card-title">{{run.title}}</div>
+      </div>
+      <div class="card-event-footer">
+        <div class="card-subtitle">{{run.location}}</div>
+      </div>
+    </div>
   </ion-card>
 
   <camera-button></camera-button>
