@@ -114,8 +114,39 @@ page-events {
     background-color: #840160;
   }
 
+.toolbar-background-md {
+  background-color: transparent;
 
+}
 
-  .toolbar::after {
-    background-color:lime;
+.toolbar {
+  position: relative;
+  z-index: 10000;
+  color:#ffffff;
+
+.toolbar-title-md {
+  color:#ffffff;
+}
+}
+
+.scroll-content {
+  z-index: 10;
+  margin-top: 100px;
+}
+
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: none;
+    height:500%;
+    width:150%;
+    border-radius: 0 0 360px 360px;
+    position: absolute;
+    top:100%;
+    /* Rectangle 2: */
+    background: #840160;
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.50) 100%);
+    top:-200%;
+    left:-25%;
+  }
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color:#ffffff;
   }
