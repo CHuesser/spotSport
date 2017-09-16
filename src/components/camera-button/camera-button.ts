@@ -3,6 +3,7 @@ import {Camera, CameraOptions} from '@ionic-native/camera';
 import {RecognizeServiceProvider} from "../../providers/recognize-service/recognize-service";
 import {Platform, NavController} from "ionic-angular";
 import {ParticipantsPage} from "../../pages/participants/participants";
+import {SplashScreen} from "@ionic-native/splash-screen";
 
 /**
  * Generated class for the CameraButtonComponent component.
@@ -17,7 +18,7 @@ import {ParticipantsPage} from "../../pages/participants/participants";
 export class CameraButtonComponent {
 
   options: CameraOptions = {
-    quality: 75,
+    quality: 60,
     allowEdit: false,
     correctOrientation: true,
     targetWidth: 1500,
@@ -27,7 +28,7 @@ export class CameraButtonComponent {
   }
 
 
-  constructor(private camera: Camera, private recognizeServiceProvider: RecognizeServiceProvider, private platform: Platform, private navCtrl: NavController) {
+  constructor(private camera: Camera, private recognizeServiceProvider: RecognizeServiceProvider, private platform: Platform, private navCtrl: NavController, private splashScreen: SplashScreen) {
   }
 
   goToCamera(params) {
@@ -44,9 +45,12 @@ export class CameraButtonComponent {
   }
 
   postImage(base64Image) {
+    this.splashScreen.show();
     this.recognizeServiceProvider.postRecognize(base64Image).subscribe((result) => {
       this.navCtrl.push(ParticipantsPage, {athletes: JSON.parse(result._body)});
+      this.splashScreen.hide();
     }, (e) => {
+      this.splashScreen.hide();
       alert('error ' + JSON.stringify(e));
     });
   }

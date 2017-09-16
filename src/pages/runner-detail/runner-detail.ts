@@ -14,7 +14,6 @@ import {EnvoirmentServiceProvider} from "../../providers/envoirment-service/envo
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-runner-detail',
   templateUrl: 'runner-detail.html',
