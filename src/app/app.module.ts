@@ -4,8 +4,6 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { EventsPage } from '../pages/events/events';
-import { ImagePage } from '../pages/image/image';
-import { RunnerPage } from '../pages/runner/runner';
 import { ParticipantsPage } from '../pages/participants/participants';
 import { RunnerDetailPage } from '../pages/runner-detail/runner-detail';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -25,8 +23,6 @@ import { EnvoirmentServiceProvider } from '../providers/envoirment-service/envoi
     MyApp,
     HomePage,
     EventsPage,
-    ImagePage,
-    RunnerPage,
     ParticipantsPage,
     RunnerDetailPage,
     CameraButtonComponent
@@ -41,8 +37,6 @@ import { EnvoirmentServiceProvider } from '../providers/envoirment-service/envoi
     MyApp,
     HomePage,
     EventsPage,
-    ImagePage,
-    RunnerPage,
     ParticipantsPage,
     RunnerDetailPage
   ],

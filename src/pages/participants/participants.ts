@@ -14,7 +14,7 @@ export class ParticipantsPage {
   athletes : Athlete[] = [];
 
   constructor(public navCtrl: NavController, private athleteServiceProvider:AthleteServiceProvider, private userServiceProvider:UserServiceProvider, private navParams:NavParams) {
-    if(this.navParams.data == null) {
+    if(this.navParams.data) {
       this.athleteServiceProvider.getAthletes().subscribe((athletes) => {
         var ath = JSON.parse(athletes._body)._embedded.athletes;
         ath.map((u) => u.user = this.userServiceProvider.getRandomUser())

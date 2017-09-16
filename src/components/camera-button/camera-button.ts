@@ -2,9 +2,6 @@ import {Component} from '@angular/core';
 import {Camera, CameraOptions} from '@ionic-native/camera';
 import {RecognizeServiceProvider} from "../../providers/recognize-service/recognize-service";
 import {Platform, NavController} from "ionic-angular";
-import {RunnerPage} from "../../pages/runner/runner";
-import {Athlete} from "../../models/Athlete";
-import {Response} from "@angular/http";
 import {ParticipantsPage} from "../../pages/participants/participants";
 
 /**
