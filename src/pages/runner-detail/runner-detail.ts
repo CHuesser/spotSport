@@ -22,8 +22,14 @@ export class RunnerDetailPage {
   images: Image[] = []
   athlete: Athlete;
 
-
+  runs = Math.floor(Math.random() * 50) + 4;
+  km = Math.floor(Math.random() * 250) + 5;
+  rank = Math.floor(Math.random() * 100) + 1;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, public userServiceProvider:UserServiceProvider) {
+
+
+
 
     this.athlete = this.navParams.data;
     this.images.push(new Image());
