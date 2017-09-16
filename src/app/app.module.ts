@@ -12,6 +12,7 @@ import { ParticipantsPage } from '../pages/participants/participants';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {CameraButtonComponent} from "../components/camera-button/camera-button";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CameraPage,
     ImagePage,
     RunnerPage,
-    ParticipantsPage
+    ParticipantsPage,
+    CameraButtonComponent
   ],
   imports: [
     BrowserModule,
