@@ -1,0 +1,21 @@
+{
+    "RunType": {
+        "title": "10km Lauf",
+        "description": "The 10 kilometre distance is popular with runners of all proficiency levels. You can make it your main goal, an intermediate goal, or else perhaps use it to take stock as you train for a half marathon or marathon, for example.",
+        "image": "https://www.datasport.com/de/cache/file/166A5982-506B-8D4C-D27C81AFE355C86B_page-header-xs-1x.jpg",
+  			"RunTypeList": {
+                  "RunType": {
+                      "ID": "1",
+            					"title": "Swiss Management Run",
+                      "date": "15 September",
+                      "location": "Arosa",
+                  },
+                  "RunType": {
+                      "ID": "2",
+            					"title": "Greifenseelauf",
+                      "date": "16 September",
+                      "location": "Uster",
+                  }
+              }
+            }
+}
