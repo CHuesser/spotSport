@@ -4,6 +4,8 @@ import {RandomUser} from "../../models/RandomUser";
 import {UserServiceProvider} from "../../providers/user-service/user-service";
 import {Image} from "../../models/Image";
 import {Athlete} from "../../models/Athlete";
+import {ImageServiceProvider} from "../../providers/image-service/image-service";
+import {EnvoirmentServiceProvider} from "../../providers/envoirment-service/envoirment-service";
 
 /**
  * Generated class for the RunnerDetailPage page.
@@ -21,22 +23,21 @@ export class RunnerDetailPage {
 
   images: Image[] = []
   athlete: Athlete;
+  baseUrl: string;
 
   runs = Math.floor(Math.random() * 50) + 4;
   km = Math.floor(Math.random() * 250) + 5;
   rank = Math.floor(Math.random() * 100) + 1;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams, public userServiceProvider:UserServiceProvider) {
 
-
-
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, public userServiceProvider:UserServiceProvider, private imageServiceProvider:ImageServiceProvider, private envoirmentServiceProvider:EnvoirmentServiceProvider) {
+    this.baseUrl = this.envoirmentServiceProvider.getBaseUrl();
     this.athlete = this.navParams.data;
-    this.images.push(new Image());
-    this.images.push(new Image());
-    this.images.push(new Image());
+    this.imageServiceProvider.getPictures(this.athlete.id).subscribe((pictures) =>{
+      var parsed = JSON.parse(pictures._body)._embedded.pictures;
+      parsed.map(i => i.user = userServiceProvider.getRandomUser())
+      this.images = parsed;
 
-    this.images.map(i => i.user = userServiceProvider.getRandomUser())
+    });
 
   }
 

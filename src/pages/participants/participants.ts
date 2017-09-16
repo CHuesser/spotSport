@@ -14,16 +14,17 @@ export class ParticipantsPage {
   athletes : Athlete[] = [];
 
   constructor(public navCtrl: NavController, private athleteServiceProvider:AthleteServiceProvider, private userServiceProvider:UserServiceProvider, private navParams:NavParams) {
-    if(this.navParams.data) {
+    console.log(this.navParams);
+    if(this.navParams.data && this.navParams.data.athletes) {
+      var ath = this.navParams.data.athletes;
+      ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
+      this.athletes = ath;
+    }else{
       this.athleteServiceProvider.getAthletes().subscribe((athletes) => {
         var ath = JSON.parse(athletes._body)._embedded.athletes;
         ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
         this.athletes = ath;
       });
-    }else{
-      var ath = this.navParams.data.athletes;
-      ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
-      this.athletes = ath;
     }
   }
   goToRunnerDetail(params){
