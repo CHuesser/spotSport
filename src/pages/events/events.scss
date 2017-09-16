@@ -5,6 +5,7 @@ page-events {
       position: relative;
       text-align: center;
       color: white;
+      height: 200px;
     }
 
     .card-events {
@@ -48,7 +49,7 @@ page-events {
       -ms-flex-direction: row;
       flex-direction: row;
       margin-top: 5.75vw;
-      transform: translateX(-50%);    
+      transform: translateX(-50%);
     }
 
     .date-day{
