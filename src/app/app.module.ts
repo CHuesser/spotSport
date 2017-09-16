@@ -7,6 +7,7 @@ import { EventsPage } from '../pages/events/events';
 import { ImagePage } from '../pages/image/image';
 import { RunnerPage } from '../pages/runner/runner';
 import { ParticipantsPage } from '../pages/participants/participants';
+import { RunnerDetailPage } from '../pages/runner-detail/runner-detail';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {CameraButtonComponent} from "../components/camera-button/camera-button";
@@ -24,6 +25,7 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
     ImagePage,
     RunnerPage,
     ParticipantsPage,
+    RunnerDetailPage,
     CameraButtonComponent
   ],
   imports: [
@@ -38,7 +40,8 @@ import { RunServiceProvider } from '../providers/run-service/run-service';
     EventsPage,
     ImagePage,
     RunnerPage,
-    ParticipantsPage
+    ParticipantsPage,
+    RunnerDetailPage
   ],
   providers: [
     StatusBar,
