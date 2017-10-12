@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Participants</ion-title>
+    <ion-title>{{title}}</ion-title>
   </ion-navbar>
   <ion-searchbar class="front" placeholder="Search with name or start number" name="search" id="participants-search" (ionInput)="getItems($event)"></ion-searchbar>
 </ion-header>
@@ -9,7 +9,7 @@
   <ion-list>
       <ion-item class="itemclass" *ngFor="let athlete of athletes;  let i = index"  (click)="goToRunnerDetail(athlete)">
       <ion-avatar item-start  >
-        <img class="avatar"[src]="athlete.user.photo">
+        <img class="avatar"[src]="athlete.picture">
         <div class="circle"><div class="rank"> #{{i+1}}</div> </div>
       </ion-avatar>
        <p> Startnumber {{athlete.startNr}}</p>

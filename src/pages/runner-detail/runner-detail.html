@@ -7,7 +7,7 @@
   <ion-content >
   <div id="content">
     <div id="profile-info">
-      <img id="profile-image" [src]="athlete.user.photo">
+      <img id="profile-image" [src]="athlete.picture">
      </div>
 
     <div class="white">
@@ -28,6 +28,11 @@
     <hr/>
     </div>
     <div id="posts" padding>
+      <ion-item no-lines *ngIf="images.length == 0">
+        <p>No pictures. Be the first to take a picture :)</p>
+      </ion-item>
+
+
       <ion-card *ngFor="let image of images">
 
         <ion-item>

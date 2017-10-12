@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 export class EnvoirmentServiceProvider {
 
   getBaseUrl(){
-    return 'http://172.30.3.241:8080/';
+    return 'http://46.102.152.131:8080/';
   }
 
 }

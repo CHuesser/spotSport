@@ -14,19 +14,24 @@ export class ParticipantsPage {
   athletes : Athlete[] = [];
   athAll : Athlete[] = [];
   searchQuery: string = '';
+  title = 'Participants';
 
   constructor(public navCtrl: NavController, private athleteServiceProvider:AthleteServiceProvider, private userServiceProvider:UserServiceProvider, private navParams:NavParams) {
-    console.log(this.navParams);
+
     if (this.navParams.data && this.navParams.data.athletes) {
       var ath = this.navParams.data.athletes;
       ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
       this.athletes = ath;
+      this.title = 'Identified runner';
+
     } else {
       this.athleteServiceProvider.getAthletes().subscribe((athletes) => {
         var ath = JSON.parse(athletes._body)._embedded.athletes;
         ath.map((u) => u.user = this.userServiceProvider.getRandomUser())
         this.athletes = ath;
         this.athAll = ath;
+        this.title = 'Participants';
+
       });
     }
   }

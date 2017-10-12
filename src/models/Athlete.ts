@@ -8,6 +8,7 @@ export class Athlete {
   country: string;
   year: string;
   category: string;
+  picture: string;
 
   user:RandomUser;
 }

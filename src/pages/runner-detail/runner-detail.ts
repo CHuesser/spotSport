@@ -33,7 +33,8 @@ export class RunnerDetailPage {
     this.athlete = this.navParams.data;
     this.imageServiceProvider.getPictures(this.athlete.id).subscribe((pictures) =>{
       var parsed = JSON.parse(pictures._body)._embedded.pictures;
-      parsed.map(i => i.user = userServiceProvider.getRandomUser())
+      parsed.map(i => i.user = userServiceProvider.getRandomUser());
+      parsed = parsed.reverse();
       this.images = parsed;
 
     });
